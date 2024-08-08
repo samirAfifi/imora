@@ -1,0 +1,29 @@
+
+.formControl {
+    border-color: #d6d6d6;
+    padding: 3px  25px; 
+    width: 100%;
+}
+.form-group{
+    width: 33%;
+    margin-right: 10px;
+}
+.form-group p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+.header{
+    color: #6f6d6d;
+    padding: 15px;
+}
+form{
+    margin: 20px;
+    border: 1px solid #f5f5f5;
+    
+}
+select option[disabled] {
+    color: #999;
+}
+.ng-select .ng-select-container .ng-value-container .ng-input>input{
+    border:  1px solid #d65050;
+}

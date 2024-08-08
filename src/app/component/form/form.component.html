@@ -1,0 +1,186 @@
+<div class="head">
+   <h6>Descriptor</h6>
+   <h4>Add new Component</h4>
+</div>
+<form [formGroup]="Form" (ngSubmit)="onsubmit()">
+  <div class="form-group1">
+   <p class="form-p">Main Details</p>
+   <div class="p-3 d-flex justify-content-center ">
+      <div class="form-group ">
+          <p>MircoServer</p>
+          <ng-select  
+          formControlName="server1"
+          placeholder="Select"
+          >
+          <ng-option >mirco server1</ng-option>
+          <ng-option >mirco server2</ng-option>
+          <ng-option >mirco server3</ng-option>
+         </ng-select>
+         
+          </div>
+          <div class="form-group ">
+            <p>Moudel</p>
+            <ng-select  
+            formControlName="server2"
+            placeholder="Select"
+            >
+            <ng-option >mirco server1</ng-option>
+            <ng-option >mirco server2</ng-option>
+            <ng-option >mirco server3</ng-option>
+           </ng-select>
+           
+            </div>
+            <div class="form-group ">
+               <p>Type</p>
+               <ng-select  
+               formControlName="server3"
+               placeholder="Select"
+               >
+               <ng-option >mirco server1</ng-option>
+               <ng-option >mirco server2</ng-option>
+               <ng-option >mirco server3</ng-option>
+              </ng-select>
+              
+               </div>
+   </div>
+  </div>
+
+
+   <div class="form-group2">
+      <p class="form-p">Widget Details</p>
+      <div class="row m-3">
+         <div class="col-md-3">
+         <label class="mb-1" for="id">ID</label>
+         <input type="number" id="id" class="form-control" placeholder="Enter id Number..." formControlName="id">
+         </div><!--col-->
+         <div class="col-md-3">
+            <label class="mb-1" for="name">Widget Name</label>
+            <input type="text" id="name" class="form-control" placeholder="Test Widget Name..." formControlName="WidgeName">
+            </div><!--col-->
+            <div class="col-md-3">
+               <label class="mb-1" for="name">Packag Name</label>
+               <input type="text" id="name" class="form-control" placeholder="Packag Name..."formControlName="PackagName">
+               </div><!--col-->
+               <div class="col-md-3">
+                  <label class="mb-1" for="name">Directive Name</label>
+                 <input type="text" id="name" class="form-control" placeholder="Test Widget Directive... " formControlName="DirectiveName">
+                  </div><!--col-->
+                  <div class="col-md-12 mt-4">
+                   
+                     <label class="mb-1" for="exampleFormControlTextarea1" class="form-label">Description</label>
+                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" placeholder="Enter Description For You Component...." formControlName="Description"></textarea>
+                  </div>
+                  <div class="col-md-3 max mt-4">
+                     <label class="mb-1" for="max">Max Size X</label>
+                     <input type="number" id="max" class="form-control" placeholder="12" formControlName="MaxSizeX">
+                     </div><!--col-->
+                     <div class="col-md-3 max mt-4">
+                        <label class="mb-1" for="max">Max Size Y</label>
+                        <input type="number" id="max" class="form-control" placeholder="10" formControlName="MaxSizeY">
+                        </div><!--col-->
+                        <div class="col-md-3 max mt-4">
+                           <label class="mb-1" for="max">Mix Size X</label>
+                           <input type="number" id="max" class="form-control" placeholder="12" formControlName="MinSizeX">
+                           </div><!--col-->
+                           <div class="col-md-3 max mt-4">
+                              <label class="mb-1" for="max">Mix Size Y</label>
+                              <input type="number" id="max" class="form-control" placeholder="10" formControlName="MinSizeY">
+                              </div><!--col-->
+                              <div class="col-md-3 max mt-4">
+                                 <label class="mb-1" for="max">Size X</label>
+                                 <input type="number" id="max" class="form-control" placeholder="12.0" formControlName="SizeX">
+                                 </div><!--col-->
+                                 <div class="col-md-3 max mt-4">
+                                    <label class="mb-1" for="max">Size Y</label>
+                                    <input type="number" id="max" class="form-control" placeholder="10.0" formControlName="SizeY">
+                                    </div><!--col-->
+                                    <div class="col-md-6 mt-4">
+                                       <label class="mb-1" for="max">Main Page URL</label>
+                                       <input type="email" id="max" class="form-control" placeholder="EX: http//address.com.eg/" formControlName="email">
+                                       </div><!--col-->
+                                       <div class="col-md-3 mt-4">
+                                          <label class="mb-1" for="icon">Icon</label>
+                                          <input type="text" id="icon" class="form-control" placeholder="Name" formControlName="icon">
+                                       </div><!--col-->
+                                       <div class="col-md-3 mt-4">
+                                          <label class="mb-1" for="select">Virtual Widget <span>(optional)</span></label>
+                                          <select  id="select" class="selext " formControlName="Virtual">
+                                             <option >false</option>
+                                             <option >true</option>
+                                          </select>
+                                       </div>   
+                                       <div class="col-md-3 mt-4">
+                                          <label class="mb-1" for="select">Anonymous Widget <span>(optional)</span></label>
+                                          <select  id="select" class="selext " formControlName="Anonymous">
+                                             <option >false</option>
+                                             <option >true</option>
+                                          </select>
+                                       </div>  
+                                       <div class="col-md-3 mt-4">
+                                          <label class="mb-1" for="name">Widget Title</label>
+                                         <input type="text" id="name" class="form-control" placeholder="Enter Widget title" formControlName="WidgetTitle">
+                                          </div><!--col-->
+                                          <div class="col-md-12 bold mt-4">
+                                             <label class="mb-1" for="name">Widget UI Defintion</label>
+                                            <input type="text" id="name" class="form-control" formControlName="Defintion" placeholder="{ 'WidgetStyling':{'ShowBorder':'true','ShowTitel':'true',ShowToolBar:'false'},ToolBarStyle:{'name':'TitleStyle','Tabs':[]}} ">
+                                             </div><!--col-->
+                                             <div class="col-md-9 bold mt-4">
+                                                <label class="mb-1" for="name">UI Rendering</label>
+                                               <input type="text" id="name" class="form-control" formControlName="Rendering" placeholder="{ 'businessSetting':{'PageNavigation':{'CREATE_INVOICE':null}} }">
+                                                </div><!--col-->
+                                                <div class="col-md-3 mt-4">
+                                                   <label class="mb-1" for="select">Widget Defaut Permission </label>
+                                                   <select  id="select" class="selection" formControlName="Permission">
+                                                      <option >Multi_selection</option>
+                                                      <option >Add_selection</option>
+                                                   </select>
+                                                </div><!--col--> 
+                                                <span class="borde"></span>
+                                                <div class="item-form" >
+                                                   <h5>Widget Dependencies</h5>
+                                                   <h6>+ New Dependency</h6>
+                                                </div>
+                                                
+                                               <table  class="table" border="1">
+                                                <thead class="table table-success table-striped">
+                                                  <tr>
+                                                    <th scope="col">#</th>
+                                                    <th scope="col">Size X</th>
+                                                    <th scope="col">Size X</th>
+                                                    <th scope="col">toWidget</th>
+                                                    <th scope="col">row <span>(opt)</span></th>
+                                                    <th scope="col">colum <span>(opt)</span></th>
+                                                    <th scope="col">Virtual Page</th>
+                                                    <th scope="col">Action</th>
+                                                  </tr>
+                                                </thead>
+                                                <tbody>
+                                                  <tr>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td class="tabel_data ms-5">No Added Dependencies yet</td>
+
+                                                  </tr>
+                                                </tbody>
+                                              </table>
+                                              
+                                         
+
+      </div><!--row-->
+    
+   </div>
+   <div class=" d-flex justify-content-end mb-5" >
+   <button (click)="saveChange()" class=" btn-save me-md-2">Save</button>
+   <button class=" btn-cansel me-5">Cancel</button>
+
+   </div>
+
+</form>
+
+
+
+ 
+
+

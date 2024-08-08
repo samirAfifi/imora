@@ -1,0 +1,22 @@
+.content{
+    text-align: center;
+   margin-top: 4rem;
+}
+.content h6{
+    font-size: 18px;
+    font-weight: 700;
+}
+.content p{
+    color: #938f8f;
+}
+.content button{
+  border: none;
+  background-color: #0bf5c6;
+  padding: 8px 30px;
+  border-radius: 2px;
+  font-size: 17px;
+  font-weight: 600;
+    
+}
+
+ 

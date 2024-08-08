@@ -1,0 +1,14 @@
+table{
+  width: 90%;
+  margin: auto;
+  margin-top: 20px;
+  
+}
+.icon i{
+  text-align: center;
+  margin-left: 20px;
+  cursor: pointer;
+}
+table thead{
+  background-color: #0bf5c6 !important;
+}
